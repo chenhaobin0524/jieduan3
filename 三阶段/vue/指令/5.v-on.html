@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script src="./vue.js"></script>
+    <script>
+        // v-on:xxx 事件绑定对象，类似于jq中的事件绑定 $().on('click')
+        // v-on: 可以简写成 @
+        new Vue({
+            el: '#demo',
+            // M 基本类型 特殊类型(对象，数组，函数)
+            data: {
+                bool: !0,
+                num: 1
+
+            },
+            //事件绑定函数写在methods对象中
+            methods: {
+                test: function (num) {
+                    console.log('触发了点击事件' + num)
+                }
+            },
+            template: `
+                <div>
+                    <button v-on:click="test(num)">ok</button>
+                    <button v-on:click="test">ok</button>
+                    <button @click="test">ok</button>
+                    <button @click="test(num)">ok</button>
+                </div>
+            `,
+        })
+    </script>
+</body>
+
+</html>

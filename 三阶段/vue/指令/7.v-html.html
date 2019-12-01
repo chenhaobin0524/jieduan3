@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script src="./vue.js"></script>
+    <script>
+        // <span v-text="msg"></span>
+        // <span v-html="msg"></span>  注意：内容按普通 HTML 插入 - 不会作为 Vue 模板进行编译 。容易受到XSS攻击，安全性较低
+        // 显示效果和下面的一样
+        // <span>{{ msg }}</span>
+        let vw = new Vue({
+            el: '#demo',
+            // M
+            data: {
+                massage: '大哥大哥，求放过',
+                html: `<div>123<span style="color:red">567</span></div>`//可用于注入式攻击
+            },
+            methods: {
+                change: function (event) {
+
+
+                }
+            },
+            template: `
+                <div>
+                  <input v-model="massage">
+                    <p v-html="massage"></p>
+                    <p v-html="html"></p>
+                    <p v-text="massage"></p>
+                    <p>{{massage}}</p>
+                </div>
+            `,
+
+        })
+    </script>
+</body>
+
+</html>

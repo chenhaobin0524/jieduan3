@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script src="./vue.js"></script>
+    <script>
+        // v-bind 用于绑定 DOM 属性
+        // 在绑定 class 或 style 特性时，支持其它类型的值，如数组或对象。
+        /* 对象语法 变量是（驼峰命名法）
+                我们可以传给 v-bind:class 一个对象，以动态地切换 class：
+                <div v-bind:class="{ active: isActive }"></div>
+                该语法表示 active 这个 class 存在与否将取决于数据属性 isActive 的布尔值；
+
+                 <div :style="{ fontSize: size + 'px' }">222</div>
+            *数组语法
+                    其中activeClass ,errorClass ,isActive都是变量
+                 <div v-bind:class="[activeClass, errorClass]"></div>
+                 <div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>
+                 跟这种写法一样功能
+                 <div v-bind:class="[{ active: isActive }, errorClass]"></div>
+        */
+        new Vue({
+            el: '#demo',
+            // M
+            data: {
+                size: 25,
+                id: 'test',
+                imageSrc: 'https://ss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=3533778697,2586993014&fm=74&app=80&f=PNG&size=f121,121?sec=1880279984&t=1dbed90be2871a78074bf731b6872ed0',
+                isColor: 'blue',
+                color: ['red', 'blue'],
+
+            },
+            methods: {
+                changeID: function () {
+                    this.id = 'heheh'
+                }
+            },
+            template: `
+                <div>
+                   <!-- 绑定一个属性 -->
+                    <img v-bind:src="imageSrc">
+                    <!-- 可缩写为 -->
+                    <img :src="imageSrc">
+
+                    <!-- class 绑定 -->
+                    <div :class="{red:isRed}">111</div>
+                     <select v-model="isColor">
+                        <option v-for="c in color" :value="c" v-text="c"></option>
+                    </select>
+                    <p :class="{blue:isColor==='blue',red:isColor==='red'}">类指令</p>
+
+                    <!-- style 绑定 -->
+                      <input type="range" v-model="size" />
+                    <p :style="{fontSize: size+'px'}">内容</p>
+            
+                    <button @click="changeID">{{id}}</button>
+                </div>
+            `
+        })
+    </script>
+</body>
+
+</html>

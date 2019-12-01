@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        {{name}}
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+    var vm = new Vue({
+        //选项
+        el: '#app',
+        data: {
+            name: 'chen',
+        },
+        // 创建前 没有M，没有V（虚拟DOM和真实DOM都没有）
+        beforeCreate() {
+            console.log('---------beforeCreate--------');
+            console.log('View', this.$el);
+            console.log('Model', this.$data);
+        },
+        // 创建后 有M，没有V 
+        //修改数据一般发生在reated里面，ajax在这里触发，因为这里是最早拿到数据的
+        created() {
+            console.log('---------created-----------');
+            console.log('View', this.$el);
+            console.log('Model', this.$data);
+
+        }
+    })
+
+
+</script>
+
+</html>

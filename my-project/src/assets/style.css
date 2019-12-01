@@ -1,0 +1,1485 @@
+#app .search {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: #39da85;
+  overflow: hidden;
+  height: 3.125rem;
+  display: flex;
+}
+
+#app .search .scity {
+  position: relative;
+  flex: 1;
+}
+
+#app .search .scity .adress {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 4rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  font-size: .875rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+#app .search .scity .arrow {
+  position: absolute;
+  display: block;
+  width: .6rem;
+  top: 1.5rem;
+  left: 3.6rem;
+  height: .4rem;
+  margin: 0 0 0 .3rem;
+  background: url(//img05.yiguoimg.com/e/web/161222/01858/110628/arrow.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+#app .search .van-search {
+  flex: 4;
+}
+
+#app .banner {
+  margin-top: 3.125rem;
+  height: 15rem;
+  overflow: hidden;
+}
+
+#app .banner .van-swipe {
+  height: 100%;
+  width: 100%;
+}
+
+#app .banner .van-swipe .van-swipe-item {
+  height: 100%;
+  width: 100%;
+}
+
+#app .banner .van-swipe .van-swipe-item img {
+  height: 100%;
+  width: 100%;
+}
+
+#app .van-grid-item__icon {
+  width: 3.875rem;
+  height: 3.875rem;
+}
+
+#app .van-grid-item__icon .van-icon__image {
+  width: 100%;
+  height: 100%;
+}
+
+#app .image {
+  width: 100%;
+}
+
+#app .image img {
+  width: 100%;
+}
+
+#app .image .oi {
+  font-size: 0px;
+}
+
+#app .image .product-list {
+  overflow: hidden;
+  width: 100%;
+  font-size: .75rem;
+  margin-top: 1.25rem;
+}
+
+#app .image .product-list .product-list-in {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: .4rem;
+  white-space: nowrap;
+  padding-left: 1rem;
+}
+
+#app .image .product-list .product-list-in .proitem {
+  display: inline-block;
+  background: #fff;
+  margin-right: .66rem;
+  border-radius: .4rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#app .image .product-list .product-list-in .proitem .pic {
+  position: relative;
+}
+
+#app .image .product-list .product-list-in .proitem .pic .pic-a {
+  display: inline-block;
+}
+
+#app .image .product-list .product-list-in .proitem .pic .pic-a img {
+  width: 8.2rem;
+  height: 8.2rem;
+  border-radius: .4rem .4rem 0 0;
+}
+
+#app .image .product-list .product-list-in .proitem .pic .saletip {
+  position: absolute;
+  bottom: 0;
+}
+
+#app .image .product-list .product-list-in .proitem .pic .saletip span {
+  border: none;
+  height: .68rem;
+  background: #fb3d3d;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4rem 6.6rem 6.6rem 0;
+  padding: .2rem .4rem;
+  font-size: .625rem;
+  line-height: .68rem;
+}
+
+#app .image .product-list .product-list-in .proitem .info {
+  position: relative;
+  box-sizing: border-box;
+  width: 8.21rem;
+  text-align: left;
+  padding-left: 0;
+  padding: .6rem;
+}
+
+#app .image .product-list .product-list-in .proitem .info .name {
+  font-size: .75rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#app .image .product-list .product-list-in .proitem .info .name a {
+  color: #333;
+  box-sizing: border-box;
+}
+
+#app .image .product-list .product-list-in .proitem .info .price {
+  margin-top: .26rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  color: #8d8a8a;
+}
+
+#app .image .product-list .product-list-in .proitem .info .price strong {
+  font-weight: bold;
+  color: #fb3d3d;
+  font-size: .875rem;
+}
+
+#app .image .product-list .product-list-in .proitem .info .price .price-addcart {
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url(//img07.yiguoimg.com/d/web/190514/00193/172123/ksgw.png) no-repeat;
+  background-size: 100% 100%;
+  float: right;
+  border-radius: 50%;
+  background-color: #01b27a;
+}
+
+#app .image .two-image {
+  display: flex;
+}
+
+#app .van-list .van-card {
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+#app .van-list .van-card .van-card__thumb {
+  position: relative;
+  top: .625rem;
+}
+
+#app .van-list .van-card__title {
+  color: #000;
+  font-size: .875rem;
+  margin-bottom: .9375rem;
+}
+
+#app .van-list .danger {
+  height: .9375rem;
+  color: #01b27a;
+  border: .0625rem solid #01b27a;
+  border-radius: .625rem;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: .625rem;
+  line-height: .9375rem;
+  margin-right: .3125rem;
+}
+
+#app .van-list .desc {
+  color: #8d8a8a;
+}
+
+#app .van-list .van-card__footer .price {
+  float: left;
+  margin-left: 6.25rem;
+  font-size: .75rem;
+  color: #8d8a8a;
+}
+
+#app .van-list .van-card__footer .price strong {
+  color: #fb3d3d;
+  font-size: 1.25rem;
+}
+
+#app .van-list .van-card__footer .van-button__text {
+  color: #01b27a;
+  border-color: #01b27a;
+}
+
+#app .shoplist {
+  padding: .75rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#app .shoplist ul .van-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#app .shoplist ul .van-list .list {
+  width: 48%;
+  margin-bottom: .625rem;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: .375rem;
+}
+
+#app .shoplist ul .van-list .list .pic {
+  width: 100%;
+  position: relative;
+}
+
+#app .shoplist ul .van-list .list .pic img {
+  width: 100%;
+}
+
+#app .shoplist ul .van-list .list .pic .saletip {
+  position: absolute;
+  bottom: .625rem;
+}
+
+#app .shoplist ul .van-list .list .pic .saletip span {
+  display: block;
+  border: none;
+  background: #fb3d3d;
+  color: #fff;
+  border-radius: 2.66rem 3.31rem 3.31rem 0;
+  padding: .2rem .4rem;
+  font-size: .625rem;
+}
+
+#app .shoplist ul .van-list .list .info {
+  padding: 0 .63rem .8rem;
+  text-align: left;
+}
+
+#app .shoplist ul .van-list .list .info .name {
+  margin-top: .4rem;
+  color: #333;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: .75rem;
+}
+
+#app .shoplist ul .van-list .list .info .name a {
+  color: #333;
+}
+
+#app .shoplist ul .van-list .list .info .price {
+  margin-top: .46rem;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  color: #aaa;
+}
+
+#app .shoplist ul .van-list .list .info .price strong {
+  font-weight: bold;
+  color: #fb3d3d;
+}
+
+#app .shoplist ul .van-list .list .info .price .price-addcart {
+  float: right;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url(//img07.yiguoimg.com/d/web/190514/00193/172123/ksgw.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  background-color: #01b27a;
+}
+
+#app .shoplist .pagefooter {
+  line-height: 1.5;
+  text-align: center;
+  color: #8d8a8a;
+  margin-bottom: 3.125rem;
+  font-size: .75rem;
+}
+
+#app .sort .search {
+  border-bottom: 1px solid #ccc;
+}
+
+#app .sort .search .van-search__action div {
+  color: #11B57C;
+}
+
+#app .sort .searchContent {
+  margin-top: 3.125rem;
+  width: 100%;
+  position: relative;
+}
+
+#app .sort .searchContent .nav {
+  position: fixed;
+  top: 3.125rem;
+  left: 0px;
+  height: 100%;
+  float: left;
+  width: 5.3125rem;
+  margin-bottom: 3.125rem;
+  overflow: hidden;
+}
+
+#app .sort .searchContent .nav .van-sidebar {
+  height: 95%;
+  overflow-y: scroll;
+}
+
+#app .sort .searchContent .nav ::-webkit-scrollbar {
+  width: 0px;
+}
+
+#app .sort .searchContent .nav ::-webkit-scrollbar {
+  display: none;
+}
+
+#app .sort .searchContent .nav .van-sidebar-item__text {
+  font-size: .75rem;
+}
+
+#app .sort .searchContent .nav .van-sidebar-item {
+  background: #f4f4f4;
+}
+
+#app .sort .searchContent .nav .van-sidebar-item--select {
+  border-color: #11B57C;
+  color: #01b27a;
+  background: #fff;
+}
+
+#app .sort .searchContent .listContent {
+  float: right;
+  width: 15.9375rem;
+  padding: .9375rem .9375rem 3.125rem;
+  height: auto;
+}
+
+#app .sort .searchContent .listContent .van-grid {
+  overflow-y: scroll;
+}
+
+#app .sort .searchContent .listContent .van-grid-item__content::after {
+  z-index: 0;
+  border-width: 0;
+}
+
+#app .sort .searchContent .listContent .van-grid-item__text {
+  color: #808080;
+}
+
+#app .eat {
+  background: #f3eeee;
+  height: 100%;
+  width: 100%;
+}
+
+#app .eat .title-icon {
+  width: 100%;
+  height: 5.6875rem;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: .3125rem;
+}
+
+#app .eat .title-icon .title-pad {
+  padding: 0 3.6% 0 3.6%;
+  box-sizing: border-box;
+}
+
+#app .eat .title-icon .title-pad li {
+  width: 20%;
+  float: left;
+  padding: .875rem 0 .875rem;
+  text-align: center;
+}
+
+#app .eat .title-icon .title-pad li img {
+  width: 2.5rem;
+  height: 2rem;
+}
+
+#app .eat .title-icon .title-pad li div {
+  width: 100%;
+  text-align: center;
+  font-size: .875rem;
+  color: #808080;
+  margin-top: .3125rem;
+}
+
+#app .eat .open-article {
+  z-index: 9;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: .3125rem;
+  width: 100%;
+  border: 1px solid #eee;
+  border-width: 1px 0px;
+}
+
+#app .eat .open-article .title-in {
+  position: relative;
+  padding: 2.6% 2.6% 0 2.6%;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+}
+
+#app .eat .open-article .title-in .img-box {
+  position: relative;
+}
+
+#app .eat .open-article .title-in .img-box .txt {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding: 2px 9px 0px 4px;
+  box-sizing: border-box;
+  height: 23px;
+  line-height: 20px;
+  background: #ff6b22;
+  text-align: left;
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+  font-size: 13px;
+  opacity: 0.90;
+}
+
+#app .eat .open-article .title-in .img-box .num {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0px 8px;
+  height: 17px;
+  line-height: 16px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  text-align: center;
+  color: #656565;
+  font-size: 12px;
+}
+
+#app .eat .open-article .title-in .img-box .lazy {
+  display: block;
+  width: 100%;
+}
+
+#app .eat .open-article .title-in .tit1 {
+  padding: 14px 0 0px;
+  font-size: 18px;
+  color: #000;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+#app .eat .open-article .title-in .time {
+  position: relative;
+  padding: 0px 80px 0px 45px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+#app .eat .open-article .title-in .time .lazy {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -17px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+#app .eat .open-article .title-in .time .name {
+  display: inline-block;
+  line-height: 57px;
+  color: #8d8a8a;
+  font-size: 13px;
+}
+
+#app .eat .open-article .title-in .time .time-new {
+  position: absolute;
+  top: 50%;
+  margin-top: -28px;
+  right: 0;
+  line-height: 57px;
+  color: #8d8a8a;
+  font-size: 13px;
+}
+
+#app .detail {
+  background: #ddd;
+}
+
+#app .detail .banner {
+  position: relative;
+  margin-top: 0px;
+  height: 23.4375rem;
+  overflow: hidden;
+}
+
+#app .detail .banner .iconBack {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  display: block;
+  background: rgba(231, 224, 224, 0.85);
+  font-size: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  line-height: 1.875rem;
+  text-align: center;
+  color: #808080;
+  opacity: 0.5;
+}
+
+#app .detail .productInfor {
+  padding: .9rem 1rem 0.8rem 1rem;
+  background: #fff;
+  margin-bottom: .6rem;
+  padding-bottom: 0;
+}
+
+#app .detail .productInfor .title {
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#app .detail .productInfor .subhead {
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: .5rem;
+}
+
+#app .detail .productInfor .subhead span {
+  font-size: .9rem;
+  color: #666;
+}
+
+#app .detail .productInfor .price {
+  position: relative;
+  overflow: hidden;
+  padding: .8rem 0.8rem;
+}
+
+#app .detail .productInfor .price .priceIn {
+  float: left;
+}
+
+#app .detail .productInfor .price .priceIn .priceRed {
+  font-size: 1.2rem;
+  color: #EB3939;
+}
+
+#app .detail .productInfor .price .area {
+  float: right;
+  font-size: .8rem;
+  color: #999999;
+  margin-top: .44rem;
+}
+
+#app .detail .productInfor .line-top {
+  position: relative;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  color: #aaaaaa;
+  font-size: .8rem;
+}
+
+#app .detail .productInfor .line-top .dian {
+  display: inline-block;
+  width: .66rem;
+  height: .66rem;
+  border-radius: 50%;
+  margin-right: .4rem;
+  border: 1px solid;
+  position: relative;
+}
+
+#app .detail .productInfor .line-top::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleY(0.5);
+  background: #ccc;
+}
+
+#app .detail .norms {
+  background: #fff;
+  margin-bottom: .6rem;
+  margin-top: 0.6rem;
+  font-size: 12px;
+  color: #000;
+  font-family: 'Avenir', 'PingFang SC', "\5FAE\8F6F\96C5\9ED1";
+}
+
+#app .detail .norms .line-bottom {
+  position: relative;
+  color: #999999;
+  font-size: .86rem;
+  line-height: 2.4rem;
+  padding: .7rem .7rem;
+}
+
+#app .detail .norms .line-bottom .choose {
+  color: #01B27A;
+  box-sizing: border-box;
+  border: 1px solid #01B27A;
+  display: inline-block;
+  margin-left: .75rem;
+  border-radius: 1.5625rem;
+  width: 5rem;
+  height: 2.125rem;
+  line-height: 2.125rem;
+  text-align: center;
+}
+
+#app .detail .norms .line-bottom .num {
+  display: inline-block;
+  margin-left: .75rem;
+}
+
+#app .detail .address {
+  padding: .875rem 1rem;
+  margin-bottom: 10px;
+  background: #fff;
+  font-family: 'Avenir', 'PingFang SC', "\5FAE\8F6F\96C5\9ED1";
+  overflow: hidden;
+}
+
+#app .detail .address .title {
+  float: left;
+  color: #999999;
+  font-size: .86rem;
+  padding-right: .8rem;
+  line-height: 1rem;
+}
+
+#app .detail .address .addressDetail {
+  float: left;
+  width: 18.75rem;
+}
+
+#app .detail .address .addressDetail .add {
+  position: relative;
+  padding-left: .8rem;
+  font-size: .75rem;
+  color: #333;
+  line-height: 1rem;
+  padding-bottom: .8rem;
+}
+
+#app .detail .address .addressDetail .add .van-icon-location {
+  color: #01B27A;
+}
+
+#app .detail .address .addressDetail .infor {
+  padding-left: .8rem;
+  font-size: .75rem;
+  color: #333;
+  line-height: 1rem;
+  padding-bottom: .8rem;
+}
+
+#app .detail .address .addressDetail .infor span {
+  color: #01B27A;
+}
+
+#app .detail .evaluate {
+  background: #fff;
+  margin-bottom: .6rem;
+}
+
+#app .detail .evaluate .title {
+  padding: .9rem 1.06rem;
+  font-size: .86rem;
+  color: #999;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#app .detail .evaluate .content {
+  padding: .64rem 1.06rem 1.06rem;
+}
+
+#app .detail .evaluate .content .txt {
+  overflow: hidden;
+}
+
+#app .detail .evaluate .content .txt .imgHeaer {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  margin-right: .625rem;
+}
+
+#app .detail .evaluate .content .txt .userName {
+  float: left;
+  font-size: .75rem;
+}
+
+#app .detail .evaluate .content .txt .userName .van-icon {
+  font-size: .875rem;
+  margin-top: .3125rem;
+}
+
+#app .detail .evaluate .content .txt .name {
+  float: right;
+  color: #808080;
+  font-size: .75rem;
+}
+
+#app .detail .evaluate .content .text {
+  font-size: .92rem;
+  color: #333;
+  line-height: 1.2rem;
+  margin: 0;
+  padding-top: .66rem;
+  margin-left: 2.7rem;
+}
+
+#app .detail .details {
+  padding: 1.4rem 0 4.7rem;
+  background: #FFF;
+  margin-top: .625rem;
+}
+
+#app .detail .details a {
+  display: block;
+  width: 8rem;
+  padding: .44rem .56rem;
+  border: 1px solid #aaa;
+  color: #999;
+  font-size: 1rem;
+  margin: 0 auto;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#app .my {
+  background: #f4f4f4;
+  box-sizing: border-box;
+}
+
+#app .my .loginNot .header {
+  position: relative;
+  height: 12.88rem;
+  background: url(../assets/bgimg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+
+#app .my .loginNot .header .headerImg {
+  position: relative;
+  display: inline-block;
+  height: 4.52rem;
+  margin-top: 1.8rem;
+  padding: 0 .64rem 0 5.7rem;
+  box-sizing: border-box;
+}
+
+#app .my .loginNot .header .headerImg .imgBorder {
+  display: inline-block;
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  border: 0.26rem solid rgba(255, 255, 255, 0.5);
+  width: 4.52rem;
+  height: 4.52rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#app .my .loginNot .header .headerImg .imgBorder img {
+  position: absolute;
+  top: 0;
+  left: 0rem;
+  width: 4.52rem;
+  height: 4.52rem;
+  border-radius: 50%;
+}
+
+#app .my .loginNot .header .headerImg a .name {
+  display: inline-block;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 3.4rem;
+  padding: .64rem 0 0 1.6rem;
+}
+
+#app .my .loginNot .header .setting {
+  display: block;
+  position: absolute;
+  top: .72rem;
+  right: 1rem;
+  width: 1.1rem;
+  height: 1.2rem;
+  background: url(../assets/setting.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 22;
+}
+
+#app .my .loginNot .header .account {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3.6rem;
+  background: white;
+  padding: .6rem;
+  box-sizing: border-box;
+}
+
+#app .my .loginNot .header .account .list {
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+#app .my .loginNot .header .account .list .num {
+  display: block;
+  font-size: 1rem;
+  color: #0e9f4e;
+}
+
+#app .my .loginNot .header .account .list .txt {
+  font-size: .64rem;
+  color: #333333;
+}
+
+#app .my .loginNot .listtab {
+  height: 4.6875rem;
+  margin: 0.6rem 0;
+  background: #FFF;
+  overflow: hidden;
+}
+
+#app .my .loginNot .listtab .line-bottom {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+#app .my .loginNot .listtab .line-bottom .lineList {
+  text-align: center;
+  width: 20%;
+  height: 100%;
+  font-size: .625rem;
+  color: #333;
+  padding-top: 1.2rem;
+  box-sizing: border-box;
+}
+
+#app .my .loginNot .listtab .line-bottom .lineList img {
+  width: 1.08rem;
+  height: 1.08rem;
+  margin-bottom: .3125rem;
+}
+
+#app .my .loginNot .testList {
+  background: #FFF;
+  height: 10.125rem;
+}
+
+#app .my .loginNot .testList .line-bottom {
+  box-sizing: border-box;
+}
+
+#app .my .loginNot .testList .line-bottom .list {
+  float: left;
+  width: 25%;
+  height: 5rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 1rem;
+}
+
+#app .my .loginNot .testList .line-bottom .list img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#app .my .loginNot .testList .line-bottom .list .name {
+  color: #333;
+  font-size: .625rem;
+  margin-top: .3125rem;
+}
+
+#app .login {
+  height: 100%;
+}
+
+#app .login .loginForm {
+  padding: .8rem 1.7rem;
+  box-sizing: border-box;
+}
+
+#app .login .loginForm .van-cell {
+  padding: 2rem 0 1rem;
+  box-sizing: border-box;
+}
+
+#app .login .loginForm .van-cell .van-field__body {
+  line-height: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+#app .login .loginForm .hint {
+  margin-top: .8rem;
+  font-size: .8rem;
+  color: #666;
+}
+
+#app .login .loginForm .forget {
+  margin-top: .8rem;
+  font-size: .8rem;
+  text-align: right;
+  color: #666;
+}
+
+#app .login .loginBtnNo {
+  background: linear-gradient(90deg, #a2edc7, #8cddc3);
+  color: #d5f4e7;
+  margin: 2.75rem 1.875rem 0;
+  width: 85%;
+  box-sizing: border-box;
+  line-height: 2.75rem;
+  font-size: 1rem;
+  border-radius: .26rem;
+  border: 0;
+}
+
+#app .login .logon {
+  margin-top: 1.8rem;
+  text-align: center;
+}
+
+#app .login .logon img {
+  margin: 0 auto;
+  width: 8.4rem;
+}
+
+#app .login .bottomProtocol {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  line-height: 1rem;
+  bottom: 2.2rem;
+  font-size: .75rem;
+  color: #666;
+}
+
+#app .login .bottomProtocol label {
+  position: relative;
+  margin-left: 2.4rem;
+  padding-left: 1.2rem;
+}
+
+#app .login .bottomProtocol label .green {
+  color: #01b27a;
+}
+
+#app .cart-wrap {
+  font-size: .75rem;
+  background: #f4f4f4;
+}
+
+#app .cart-wrap .navBar {
+  width: 100%;
+  height: 2.88rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 103;
+  position: relative;
+}
+
+#app .cart-wrap .navBar .goBack {
+  display: inline-block;
+  width: .5rem;
+  height: 1rem;
+  position: absolute;
+  left: .9rem;
+  top: 1rem;
+}
+
+#app .cart-wrap .navBar .title {
+  margin-top: 0;
+  font-size: 1rem;
+  line-height: 2.8rem;
+}
+
+#app .cart-wrap .cart-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.62rem;
+  background: #fff;
+  line-height: 2.62rem;
+  font-size: .75rem;
+  color: #808080;
+  text-align: center;
+  z-index: 100;
+}
+
+#app .cart-wrap .cart-login .line-all {
+  display: inline-block;
+  width: 3.6rem;
+  height: 1.4rem;
+  margin: 0 0 0 .84rem;
+  line-height: 1.4rem;
+  color: #808080;
+  border: .0625rem solid #808080;
+  border-radius: 6px;
+  font-size: .75rem;
+}
+
+#app .cart-wrap .cart-express {
+  position: fixed;
+  top: 2.64rem;
+  left: 0;
+  width: 100%;
+  height: 2.64rem;
+  padding: 0 0 0 .64rem;
+  box-sizing: border-box;
+  background: #fff9eb;
+  line-height: 2.64rem;
+  font-size: .76rem;
+  color: #d3b162;
+  z-index: 100;
+  border-top: 1px solid #d3b162;
+  border-bottom: 1px solid #d3b162;
+}
+
+#app .cart-wrap .cart-express .red {
+  color: #fb3d3d;
+}
+
+#app .cart-wrap .toppad {
+  padding-top: 6rem;
+}
+
+#app .cart-wrap .goods {
+  overflow: hidden;
+}
+
+#app .cart-wrap .goods .group {
+  position: relative;
+}
+
+#app .cart-wrap .goods .group .saleGroup {
+  margin-bottom: 0.6rem;
+  height: 5.0625rem;
+  position: relative;
+  padding: .6rem 0 .6rem 2.44rem;
+  background: #fff;
+}
+
+#app .cart-wrap .goods .group .saleGroup .check {
+  position: absolute;
+  top: .62rem;
+  left: 0;
+  width: 2.44rem;
+  height: 1.1rem;
+  padding: 2.1rem 0;
+  text-align: center;
+}
+
+#app .cart-wrap .goods .group .saleGroup .img {
+  position: absolute;
+  left: 2.44rem;
+  top: .62rem;
+  width: 5.4rem;
+  height: 5.4rem;
+}
+
+#app .cart-wrap .goods .group .saleGroup .img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#app .cart-wrap .goods .group .saleGroup .text {
+  padding: 0 4rem 0 6rem;
+}
+
+#app .cart-wrap .goods .group .saleGroup .text .elli2 {
+  height: 2.24rem;
+  line-height: 0.1 0.1rem;
+  font-size: .75rem;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+#app .cart-wrap .goods .group .saleGroup .text .tag {
+  height: 1.2rem;
+  padding: .4rem 0 .2rem;
+}
+
+#app .cart-wrap .goods .group .saleGroup .text p {
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: .6rem;
+  color: #ccc;
+}
+
+#app .cart-wrap .goods .group .saleGroup .text p .red {
+  color: #fb3d3d;
+}
+
+#app .cart-wrap .goods .group .saleGroup .text p .red b {
+  font-weight: 500;
+  font-size: .84rem;
+}
+
+#app .cart-wrap .goods .group .saleGroup .text p .bl {
+  margin: 0 0 0 .6rem;
+  text-decoration: line-through;
+}
+
+#app .cart-wrap .goods .group .saleGroup .del {
+  position: absolute;
+  right: 1rem;
+  top: .44rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+#app .cart-wrap .goods .group .saleGroup .del .van-icon {
+  font-size: 1.25rem;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  color: #ddd;
+}
+
+#app .cart-wrap .goods .group .saleGroup .num {
+  position: absolute;
+  right: 1rem;
+  top: 4.5rem;
+  height: 1.4rem;
+}
+
+#app .cart-wrap .goods .group .saleGroup .num .van-stepper .van-stepper__minus,
+#app .cart-wrap .goods .group .saleGroup .num .van-stepper .van-stepper__plus {
+  width: 1.3125rem;
+  height: 1.3125rem;
+}
+
+#app .cart-wrap .goods .group .saleGroup .num .van-stepper input {
+  height: 1.3125rem;
+  width: 2.1875rem;
+}
+
+#app .cart-wrap .nogoods {
+  display: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  padding: 3.6rem 0 3.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+#app .cart-wrap .nogoods .icon {
+  width: 100%;
+  height: 7.2rem;
+  background: url(//img07.yiguoimg.com/d/web/180313/013112/195558/img_nogoods@3x.png) no-repeat center;
+  background-size: auto 100%;
+  vertical-align: middle;
+}
+
+#app .cart-wrap .nogoods p {
+  padding: 2rem 0 1rem;
+  font-size: .75rem;
+  color: #808080;
+}
+
+#app .cart-wrap .nogoods .btn {
+  height: 2.4rem;
+}
+
+#app .cart-wrap .nogoods .btn a {
+  position: relative;
+  display: inline-block;
+  width: 9rem;
+  height: 2.4rem;
+  border: 1px solid #11b57c;
+  border-radius: 6px;
+  line-height: 2.4rem;
+  font-size: 1rem;
+  color: #11b57c;
+}
+
+#app .cart-wrap .guss {
+  position: relative;
+  margin: 0 0 .6rem;
+  background: #fff;
+}
+
+#app .cart-wrap .guss .title {
+  position: relative;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: .75rem;
+  color: #000;
+  text-align: center;
+}
+
+#app .cart-wrap .guss .title h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 .4rem;
+  font-size: .96rem;
+  font-weight: normal;
+  color: #333;
+}
+
+#app .cart-wrap .guss .title h2::before {
+  content: "";
+  display: block;
+  width: 1.4rem;
+  height: 0.18rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -.02rem;
+  background: url(//img05.yiguoimg.com/d/web/180508/01318/181423/decoration-left@3x.png) top left no-repeat;
+  background-size: auto 100%;
+  left: -1.25rem;
+}
+
+#app .cart-wrap .guss .title h2::after {
+  content: "";
+  display: block;
+  width: 1.4rem;
+  height: .18rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -.02rem;
+  background: url(//img05.yiguoimg.com/d/web/180508/01318/181423/decoration-left@3x.png) top left no-repeat;
+  background-size: auto 100%;
+  right: -1.25rem;
+  transform: rotate(180deg);
+}
+
+#app .cart-wrap .guss .list {
+  position: relative;
+  padding: .2rem .4rem 1.4rem;
+}
+
+#app .cart-wrap .guss .list .one {
+  float: left;
+  position: relative;
+  width: 50%;
+  padding: .3rem 1rem;
+  box-sizing: border-box;
+}
+
+#app .cart-wrap .guss .list .one .img {
+  width: 9.375rem;
+  height: 9.375rem;
+}
+
+#app .cart-wrap .guss .list .one .img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#app .cart-wrap .guss .list .one .text .elli2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 2.4rem;
+  line-height: 1.2rem;
+  font-size: .8rem;
+  font-weight: normal;
+}
+
+#app .cart-wrap .guss .list .one .text .red {
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 11px;
+  color: #fb3d3d;
+}
+
+#app .cart-wrap .guss .list .one .btn {
+  position: absolute;
+  right: 1rem;
+  bottom: .3rem;
+}
+
+#app .cart-wrap .guss .list .one .btn .van-icon-add-o {
+  font-size: 1.25rem;
+  color: #01B27A;
+}
+
+#app .cart-wrap .submit {
+  position: fixed;
+  bottom: 3.125rem;
+  left: 0px;
+  height: 3.125rem;
+  right: 0px;
+}
+
+#app .cart-wrap .submit .van-submit-bar {
+  position: fixed;
+  bottom: 3.125rem;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+}
+
+#app .cart-wrap .submit .van-submit-bar .van-checkbox {
+  margin-left: .625rem;
+}
+
+#app .city {
+  background: #f4f4f4;
+}
+
+#app .city h3 {
+  height: 2.62rem;
+  padding: 0 .64rem;
+  line-height: 2.62rem;
+  font-size: .84rem;
+  font-weight: 400;
+  color: #333;
+}
+
+#app .city .hot {
+  width: 100%;
+  padding: 0 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+#app .city .hot .line-all {
+  position: relative;
+  float: left;
+  width: 4.5rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  border-radius: 3px;
+  background: #fff;
+  font-size: .75rem;
+  margin-bottom: 0.62rem;
+  color: #333;
+  text-align: center;
+  border: 1px solid #ddd;
+  text-shadow: 0 0 5px #ddd;
+}
+
+#app .city h4 {
+  position: relative;
+  height: 2rem;
+  padding: 0 .62rem;
+  line-height: 2rem;
+  font-size: .84rem;
+  color: #385c9a;
+  overflow: hidden;
+  font-weight: 800;
+}
+
+#app .city .list {
+  position: relative;
+  padding: .64rem 1.3rem 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+#app .city .list span {
+  display: block;
+  width: 33%;
+  height: 1.8rem;
+  margin: 0 0 .62rem 0;
+  line-height: 1.8rem;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}

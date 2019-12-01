@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+</body>
+<script src="./vue.js"></script>
+<script src="./vuex.js"></script>
+<script>
+    console.log(window);
+    // 创建一个公用仓库store
+    const store = new Vuex.Store({
+        state: {
+            count: 0,//通信参数，组件间公用的数据
+        },
+        // 必须是同步的
+        mutations: {
+            // 传入额外的参数，即 mutation 的 载荷（payload），即newValue
+            setCount(state, newValue) {
+                state.count = newValue
+            }
+        }
+    });
+    // 组件1，修改参数
+    Vue.component('component1', {
+        template: `
+        <div>
+            组件1
+            <p>{{count}}</p>
+              <button @click="plus">ok</button>
+        </div>
+        `,
+        methods: {
+            plus() {
+                console.log(this.$store.state.count);
+                // 1.直接更改仓库的count
+                // this.$store.state.count++;
+                this.$store.commit('setCount', 10)
+            }
+        },
+        // 计算属性
+        computed: {
+            count() {
+                return this.$store.state.count;
+            }
+        }
+    });
+    // 组件2，获取参数
+    Vue.component('component2', {
+        template: `
+         <div>
+            组件2
+            <p>{{count}}</p>
+        </div>
+        `,
+        computed: {
+            count() {
+                return this.$store.state.count
+            }
+        }
+    });
+
+    const vm = new Vue({
+        el: '#demo',
+        // 把 store 对象提供给 “store” 选项，这可以把 store 的实例注入所有的子组件
+        store,//引入公共仓库
+        template: `
+        <div>
+            <component1/>
+            <hr/>
+            <component2/>
+        </div>
+        `
+    })
+</script>
+
+</html>

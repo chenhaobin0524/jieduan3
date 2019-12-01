@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // 如下就是闭包
+    // 闭包就是能够读取其他函数内部变量的函数,在本质上，闭包是将函数内部和函数外部连接起来的桥梁。
+
+    function a() {
+        // 所占内存会越来越大
+        let b = 1;
+        function c(b) {
+            return b
+        }
+        return c
+    }
+    // 函数类似一个虫洞，突破函数的作用域，直接进去获取该b的值
+    // 没有垃圾回收机制
+    let fn = a()
+    console.log(a())
+</script>
+
+</html>

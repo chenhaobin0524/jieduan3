@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+<script src="./vue.js"></script>
+<script>
+    var vm = new Vue({
+        //选项
+        el: '#app',
+        data: {
+            name: 'chen',
+        },
+        // 需要编译
+        // template:`
+        // <div>{{name}}</div>
+        // `,
+        // 不需要编译
+        render(h) {
+            console.log('--------render-------------');
+            // h(标签的名字，该标签的属性，标签里面的值)
+            let viewdom = h('div', null, this.name);
+            // 虚拟DOM对象，是该函数接收新的Model之后执行得到的对象
+            console.log(viewdom);
+            return viewdom;
+        },
+        // 创建前 没有M，没有V（虚拟DOM和真实DOM都没有）
+        beforeCreate() {
+            console.log('---------beforeCreate--------');
+            console.log('View', this.$el);
+            console.log('Model', this.$data);
+        },
+        // 创建后 有M，没有V 
+        //修改数据一般发生在reated里面，ajax在这里触发，因为这里是最早拿到数据的
+        created() {
+            console.log('---------created-----------');
+            console.log('View', this.$el);
+            console.log('Model', this.$data);
+        },
+        // 挂载前  读取了模板，但是没更新上去，编译模板
+        // 在挂载前和挂载后之间，render函数首次被调用
+        beforeMount() {
+            console.log('---------beforeMount------');
+            console.log('View', this.$el);
+            console.log('Model', this.$data);
+        },
+        // 挂载后 V 和M都更新完毕 V已经完全更新了，所以一般把DOM操作放在这里
+        mounted() {
+            console.log('------mounted--------');
+            console.log('View', this.$el);
+            console.log('Model', this.$data);
+        }
+    })
+
+
+</script>
+
+</html>

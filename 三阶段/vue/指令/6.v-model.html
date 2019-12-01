@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script src="./vue.js"></script>
+    <script>
+        // v-model 指令，它能轻松实现表单输入和应用状态之间的双向绑定。
+        // 从视图层把数据带回数据层
+        // @input特殊的 V-M的一个方式
+        new Vue({
+            el: '#demo',
+            // M
+            data: {
+                value: 'yao',
+                arr: ['yao', 'jing', 'lin']
+            },
+            methods: {
+                change: function (event) {
+
+
+                }
+            },
+            template: `
+                <div>
+                  <input v-model="value" />
+
+                    <select v-model="value">
+                        <option v-for="a in arr" v-text="a"></option>
+                    </select>
+
+                    <textarea v-model="value"></textarea>
+                </div>
+            `,
+
+        })
+    </script>
+</body>
+
+</html>

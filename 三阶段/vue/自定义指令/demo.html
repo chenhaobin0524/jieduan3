@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">
+        <p v-color="color">123</p>
+        <p v-color="blue">456</p>
+    </div>
+</body>
+<script src="vue.js"></script>
+<script>
+
+    new Vue({
+        el: '#demo',
+        data() {
+            return {
+                color: 'red'
+            }
+        },
+        //自定义指令,注册局部指令
+        directives: {
+            color: {
+                // 当被绑定的元素插入到 DOM 中时
+                inserted: function (el, binding) {
+                    el.style.color = binding.value
+                }
+            },
+
+        },
+
+    })
+    // 注册一个全局自定义指令 `v-focus`
+    Vue.directive('focus', {
+        // 当被绑定的元素插入到 DOM 中时……
+        inserted: function (el) {
+            // 聚焦元素
+            el.focus()
+        }
+    })
+
+</script>
+
+</html>

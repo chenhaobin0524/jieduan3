@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script src="./vue.js"></script>
+    <script>
+        // v-pre 跳过这个元素和它的子元素的编译过程。可以用来显示原始 Mustache 标签。跳过大量没有指令的节点会加快编译。
+        // 主要是为了保持显示格式为 {{内容}}
+        new Vue({
+            el: '#demo',
+            // M
+            data: {
+                bool: '{{ this will not be compiled}}'//也可以这么写，直接写成字符串
+            },
+            template: `
+                <div>
+                    <span v-pre>{{ this will not be compiled }}</span>
+                     <span v-text="bool"></span>
+                </div>
+            `
+        })
+    </script>
+</body>
+
+</html>

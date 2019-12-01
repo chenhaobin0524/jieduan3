@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <!-- 提供React.createElement帮你构造虚拟DOM -->
+    <!-- React 的核心库 -->
+    <script src="react.js"></script>
+    <!-- 提供ReactDOM.render 帮你把虚拟DOM 转为真实DOM -->
+    <!-- 提供与 DOM 相关的功能 -->
+    <script src="react-dom.js"></script>
+    <script>
+        // react提供了全局变量window.React
+        //react-dom 提供了全局变量window.ReactDOM
+
+
+        const data = {
+            name: 'chen',
+            age: 18
+        };
+        // 创建虚拟DOM
+        const template = React.createElement('div', null, data.name, data.age);
+        // 获取操作节点
+        const el = document.querySelector('#demo');
+        // 把虚拟dom转为真实dom
+        ReactDOM.render(template, el);
+    </script>
+</body>
+
+</html>

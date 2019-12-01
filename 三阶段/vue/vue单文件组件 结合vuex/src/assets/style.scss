@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 30px;
+    line-height: 40px;
+    width: 100%;
+    background: yellowgreen;
+    color: white;
+    text-align: center;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+.weui-panel{
+    flex: 1;
+}

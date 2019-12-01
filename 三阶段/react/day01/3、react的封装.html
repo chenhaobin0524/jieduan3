@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+    <script>
+        function Vue(options) {
+            // 数据
+            this.data = options.data;
+            // 虚拟dom
+            this.template = options.template;
+            // 找节点
+            this.el = document.querySelector(options.el);
+            // 把虚拟dom转为真实dom
+            ReactDOM.render(this.template, this.el)
+        }
+
+        const vm = new Vue({
+            el: "#demo",
+            template: React.createElement('div', null, 'dddd'),
+            data: {
+                name: 'yao'
+            }
+        })
+        console.log(window);
+        
+        console.log(vm);
+    </script>
+</body>
+
+</html>

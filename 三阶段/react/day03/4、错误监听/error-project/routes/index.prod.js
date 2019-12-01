@@ -1,0 +1,1 @@
+"use strict";var express=require("express"),router=express.Router();router.get("/error",function(e,r,o){console.log(e.query),r.send("错误接收完毕")}),module.exports=router;

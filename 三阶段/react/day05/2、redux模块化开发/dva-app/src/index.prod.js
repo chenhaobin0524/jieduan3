@@ -1,0 +1,1 @@
+"use strict";var _dva=_interopRequireDefault(require("dva"));function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}require("./index.css"),require("weui");var app=(0,_dva.default)();app.router(require("./router").default),app.start("#root");

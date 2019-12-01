@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app" style="height: 2000px;">
+        <button @click="destroy">触发销毁</button>
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+    var vm = new Vue({
+        //选项
+        el: '#app',
+        data: {
+            name: 'chen',
+            timer: null
+        },
+        // 需要编译
+        // template:`
+        // <div>{{name}}</div>
+        // `,
+        // 不需要编译
+        // render(h) {
+        //     console.log('--------render-------------');
+        //     // h(标签的名字，该标签的属性，标签里面的值)
+        //     let viewdom = h('div', null, this.name);
+        //     // 虚拟DOM对象，是该函数接收新的Model之后执行得到的对象
+        //     console.log(viewdom);
+        //     return viewdom;
+        // },
+        // 创建前 没有M，没有V（虚拟DOM和真实DOM都没有）
+        beforeCreate() {
+            console.log('---------beforeCreate--------');
+            console.log('View', this.$el);
+            console.log('Model', this.$data);
+        },
+        // 创建后 有M，没有V 
+        //修改数据一般发生在reated里面，ajax在这里触发，因为这里是最早拿到数据的
+        created() {
+            console.log('---------created-----------');
+            console.log('View', this.$el);
+            console.log('Model', this.$data);
+            // 定时器是Vue实例化后触发的
+            this.timer = window.setInterval(() => {
+                console.log(1);
+
+            }, 1000);
+            window.onscroll = (() => {
+                console.log('滚动了');
+            });
+            window.anme = 'chen';
+        },
+        beforeDestroy() {
+            console.log('--------------beforeDestroy---------------')
+            console.log('View', this.$el);
+            console.log('Model', this.$data);
+            // 清除滚动事件
+            window.onscroll = null
+            // 清除定时器
+            window.clearInterval(this.timer)
+            // 删除全局变量 释放内存
+            // 手动垃圾回收
+            delete window.aname;
+
+        },
+        // 销毁后
+        destroyed() {
+            console.log('--------------destroyed---------------')
+            console.log('View', this.$el)
+            console.log('Model', this.$data)
+        },
+        methods: {
+            destroy() {
+                // 清理它与其它实例的连接，解绑它的全部指令及事件监听器。vm.$destroy;
+                this.$destroy();
+            }
+        }
+    })
+
+
+</script>
+
+</html>
